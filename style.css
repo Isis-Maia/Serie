@@ -13,8 +13,24 @@ body {
     flex-direction: column;
 }
 
-main {
-    flex: 1;
+#vela {
+    background-image: url('imagens/vela.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+#sino {
+    align-self: center;
+    width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.432);
+
 }
 
 footer {
@@ -29,9 +45,19 @@ h1 {
     text-shadow: #2D1E1A 1px 1px 2px ;
 }
 
+h3 {
+    margin-left: 12px;
+}
+
 a {
     color: 	#6C2E2E;
     text-decoration: none;
+    margin-left: 15px;
+}
+
+.pagi {
+    text-align: center;
+    font-size: 20px;
 }
 
 p {
@@ -45,7 +71,7 @@ p {
     color: #F6C945;
     text-align: left;
     margin-top: 30px;
-
+    margin-left: 20PX;
 }
 
 img {
