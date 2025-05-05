@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Burned&display=swap');
 
 html, body {
-    height: 545%;
+    min-height: 100%;
     margin: 0;
 }
 
@@ -69,4 +69,34 @@ img {
 .pagi {
     text-align: center;
     font-size: 20px;
+}
+
+.elenco {
+    background-color: #2b0d04;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px auto;
+    padding: 10px 20px;
+    max-width: 500px;
+    transition: transform 0.2s;
+}
+
+.elenco:hover {
+    transform: scale(1.02);
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 0;
+    outline: none;
+}
+
+details[open] summary {
+    color: #007BFF;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
