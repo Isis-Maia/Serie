@@ -99,4 +99,19 @@ details[open] summary {
 img {
     display: block;
     margin: 0 auto;
+    border-radius: 10px;
+}
+
+.ep {
+    background-color: #2b0d04;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px auto;
+    padding: 10px 20px;
+    max-width: 500px;
+    transition: transform 0.2s;
+}
+
+.ep:hover {
+    transform: scale(1.02);
 }
