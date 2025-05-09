@@ -51,11 +51,6 @@ h3 {
     margin-left: 12px;
 }
 
-a {
-    color: 	#FF7D00;
-    text-decoration: none;
-    margin-left: 15px;
-}
 
 p {
     margin-left: 28px;
@@ -69,17 +64,32 @@ img {
 
 .logo {
     font-family: "Rubik Wet Paint", system-ui;
-    font-size: 30px;
+    font-size: 50px;
     color: #FF7D00;
-    text-align: left;
     margin-top: 30px;
     margin-left: 20PX;
+    margin-bottom: 25px;
     text-shadow: #2D1E1A 4px 1px 2px ;
+    text-align: center;
 }
+
+a:hover {
+    color: #2b0d04;
+}
+
+a {
+    color: #FF7D00;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+
 
 .pagi {
     text-align: center;
     font-size: 20px;
+    color:#ff8d23be;
+    margin-bottom: 20px;
 }
 
 .sinopse {
@@ -87,4 +97,16 @@ img {
     font-family: "Rubik Wet Paint", system-ui;
     font-size: 30px;
     text-align: center;
+}
+
+@media (max-width: 992px) {
+    #sino {
+        width: calc(90% - 40px); 
+    }
+}
+
+@media (max-width: 576px) {
+    #sino {
+        width: 90%; 
+    }
 }

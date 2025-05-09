@@ -17,6 +17,19 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+
+}
+
+body {
+    
+    flex-direction: column;
+    
+}
+
+main {
+    flex: 1;
 }
 
 footer {
@@ -27,9 +40,10 @@ footer {
 h1 {
     font-family: "Rubik Wet Paint", system-ui;
     text-align: center;
-    color: #F6C945;
+    color: #ff7b00d3;
     text-shadow: #2D1E1A 3px 1px 4px ;
-    font-size: 60px;
+    font-size: 55px;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -38,12 +52,6 @@ h2 {
 
 h3 {
     margin-left: 12px;
-}
-
-a {
-    color: 	#FF7D00;
-    text-decoration: none;
-    margin-left: 15px;
 }
 
 p {
@@ -58,17 +66,31 @@ img {
 
 .logo {
     font-family: "Rubik Wet Paint", system-ui;
-    font-size: 30px;
+    font-size: 50px;
     color: #FF7D00;
-    text-align: left;
     margin-top: 30px;
     margin-left: 20PX;
+    margin-bottom: 25px;
     text-shadow: #2D1E1A 4px 1px 2px ;
+    text-align: center;
+    
+}
+
+a:hover {
+    color: #2b0d04;
+}
+
+
+a {
+    color: #FF7D00;
+    text-decoration: none;
+    margin-left: 15px;
 }
 
 .pagi {
     text-align: center;
     font-size: 20px;
+    color:#ff8d23be;
 }
 
 .elenco {
@@ -79,10 +101,32 @@ img {
     padding: 10px 20px;
     max-width: 500px;
     transition: transform 0.2s;
+    width: calc(33.33% - 40px); 
+    
+
+}
+
+.container-elenco {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
 }
 
 .elenco:hover {
     transform: scale(1.02);
+}
+
+@media (max-width: 992px) {
+    .elenco {
+        width: calc(50% - 40px); 
+    }
+}
+
+@media (max-width: 576px) {
+    .elenco {
+        width: 100%; 
+    }
 }
 
 summary {
@@ -94,6 +138,7 @@ summary {
 
 details[open] summary {
     color: #007BFF;
+    
 }
 
 img {
@@ -102,16 +147,35 @@ img {
     border-radius: 10px;
 }
 
-.ep {
-    background-color: #2b0d04;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin: 10px auto;
-    padding: 10px 20px;
-    max-width: 500px;
-    transition: transform 0.2s;
+.card:hover {
+    transform: scale(1.02);
 }
 
-.ep:hover {
-    transform: scale(1.02);
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    align-items: flex-start;
+
+}
+
+.card {
+    width: 300px;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    padding-bottom: 30px;
+    color: #ff8d23be;
+    background-color: #2b0d04;
+    min-height: 325px;
+    
+
+}
+
+.card-img-top {
+    size: 110%;
+    border-radius: 8px 8px 0 0;
 }
